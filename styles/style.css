@@ -1,0 +1,197 @@
+.container {
+	width: 800px;
+	height: 799px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../img/shashki.jpg) #000;
+}
+
+div[class^="black"] {
+	width: 80px;
+	height: 80px;
+	background-color: black;
+	border-radius: 70px;
+	position: absolute;
+	
+
+}
+
+div[class^="white"] {
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	border-radius: 70px;
+	position: absolute;
+}
+
+
+.black-1 {
+	top: 43px;
+	left: 134px;
+}
+
+.black-2 {
+	top: 43px;
+	left: 314px;
+}
+
+.black-3 {
+	top: 43px;
+	left: 493px;
+}
+
+.black-4 {
+	top: 43px;
+	left: 673px;
+}
+
+.black-5 {
+	top: 134px;
+	left: 43px;
+}
+
+.black-6 {
+	top: 134px;
+	left: 223px;
+}
+
+.black-7 {
+	top: 134px;
+	left: 403px;
+}
+
+.black-8 {
+	top: 134px;
+	left: 583px;
+}
+
+.black-9 {
+	top: 223px;
+	left: 134px;
+}
+
+.black-10 {
+	top: 223px;
+	left: 314px;
+}
+
+.black-11 {
+	top: 223px;
+	left: 493px;
+}
+
+.black-12 {
+	top: 223px;
+	left: 673px;
+}
+
+
+
+
+
+.white-1 {
+	bottom: 47px;
+	left: 43px;
+}
+
+.white-2 {
+	bottom: 47px;
+	left: 223px;
+}
+
+.white-3 {
+	bottom: 47px;
+	left: 403px;
+}
+
+.white-4 {
+	bottom: 47px;
+	left: 583px;
+}
+
+.white-5 {
+	bottom: 137px;
+	left: 133px;
+}
+
+.white-6 {
+	bottom: 137px;
+	left: 313px;
+}
+
+.white-7 {
+	bottom: 137px;
+	left: 493px;
+}
+
+.white-8 {
+	bottom: 137px;
+	left: 673px;
+}
+
+.white-9 {
+	bottom: 227px;
+	left: 43px;
+}
+
+.white-10 {
+	bottom: 227px;
+	left: 223px;
+}
+
+.white-11 {
+	bottom: 227px;
+	left: 403px;
+}
+
+.white-12 {
+	bottom: 227px;
+	left: 583px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+div[class^="black"]:hover {
+  
+	animation: bounce 1s;
+}
+
+
+div[class^="white"]{
+	transition: all 500ms ease; 
+	transform-style: preserve-3d;
+}
+
+div[class^="white"]:after {
+	top: -100%;
+	left: 0px;
+	width: 80px;
+	height: 80px;
+	background-color: black;
+	border-radius: 70px;
+	position: absolute;
+	content: '';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+}
+
+div[class^="white"]:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
